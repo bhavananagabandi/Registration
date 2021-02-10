@@ -1,0 +1,21 @@
+.buttonContainer {
+    display: flex;
+    justify-content: center;
+}
+.button {
+    display: flex;
+    justify-content: center;
+    background-color: #1F6ED4;
+    border: none;
+    font-size: 20px;
+    margin: 10px;
+    padding: 8px 24px;
+    cursor: pointer;
+    border-radius: 25px;
+    color: white
+}
+:disabled {
+    cursor: default;
+    background-color: #475F77;
+    color: white;
+}
