@@ -7,8 +7,9 @@ export const FormField = ({name, type}) => {
         <Field name= {`${name}`} validate={checkValidations(name)}>
                     {({ input, meta }) => (
                     <div>
-                        <label>{`${name}`}: </label>
+                        <label>{`${name}`}: 
                         <input style = {{fontSize: '24px'}} {...input} type={`${type}`} placeholder={`${name}`} value={input.value} />
+                        </label>
                         {meta.error && meta.touched && <span style={{color: 'red', paddingLeft: '5px'}}>{meta.error}</span>}
                     </div>
                     )}

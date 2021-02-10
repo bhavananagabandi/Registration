@@ -21,7 +21,7 @@ const Name = (props) => {
         onSubmit={onSubmit}
         initialValues={{FirstName, LastName}}
         render={({ handleSubmit, invalid }) => (
-          <form onSubmit={handleSubmit}>
+          <form onSubmit={handleSubmit} data-testid="name-form">
             <h1>Let's collect some basic information</h1>
               <FormField name = 'FirstName' type = 'text' />
               <FormField name = 'LastName' type = 'text' />

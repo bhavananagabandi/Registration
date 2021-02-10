@@ -2,7 +2,6 @@
 import { useHistory } from 'react-router';
 import styles from './styles.module.css'
 
-console.log({styles})
 export const Button = ({isDisabled}) => {
     const history = useHistory();
     const handleClick = () => {
